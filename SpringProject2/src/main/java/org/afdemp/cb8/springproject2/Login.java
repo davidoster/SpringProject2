@@ -5,6 +5,7 @@
  */
 package org.afdemp.cb8.springproject2;
 
+import org.afdemp.cb8.springproject2.entities.UserLogin;
 import org.springframework.web.servlet.mvc.SimpleFormController;
 
 /**
@@ -17,10 +18,10 @@ public class Login extends SimpleFormController {
         //Initialize controller properties here or 
         //in the Web Application Context
 
-        //setCommandClass(MyCommand.class);
-        //setCommandName("MyCommandName");
+        setCommandClass(UserLogin.class);
+        setCommandName("userlogin");
         //setSuccessView("successView");
-        //setFormView("formView");
+        setFormView("login");
     }
     
     @Override
